@@ -1,0 +1,36 @@
+<xml>
+
+<date>
+<day>02.01.2014</day>
+<group>
+<name>»Пылесосы/роботы»</name>
+<quantity>1</quantity>
+<revenue>18190</revenue>
+<profit>501</profit>
+</group>
+<group>
+<name>»Стиральные машины фронтальные до 48 см»</name>
+<quantity>2</quantity>
+<revenue>39190</revenue>
+<profit>2150</profit>
+</group>
+<group>
+<name>»Стиральные машины 00 см»</name>
+<quantity>200</quantity>
+<revenue>100</revenue>
+<profit>150</profit>
+</group>
+</date>
+
+<date>
+<day>03.01.2014</day>
+<group>
+<name>»Пылесосы с мешком»</name>
+<quantity>3</quantity>
+<revenue>25439</revenue>
+<profit>9999</profit>
+</group>
+</date>
+
+
+</xml>
