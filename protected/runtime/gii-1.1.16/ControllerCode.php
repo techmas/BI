@@ -2,5 +2,5 @@
 return array (
   'template' => 'default',
   'baseClass' => 'Controller',
-  'actions' => 'action',
+  'actions' => 'import1C, importGA',
 );

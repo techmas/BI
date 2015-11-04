@@ -604,3 +604,679 @@ Stack trace:
 REQUEST_URI=/index.php?r=site/manage
 in /var/www/html/bi/protected/controllers/SiteController.php (38)
 in /var/www/html/bi/index.php (14)
+2015/11/03 09:57:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('import')
+#3 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/html/bi/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=import
+HTTP_REFERER=http://46.101.133.199/index.php?r=import/import1C
+---
+2015/11/03 10:00:18 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:00:18 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:00:20 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:00:20 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:00:29 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:00:29 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:00:32 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:00:32 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:00:54 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:00:54 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:01:42 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:01:42 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:01:46 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:01:46 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:01:47 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:01:47 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:01:48 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:01:48 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:02:32 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:02:32 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:02:37 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:02:37 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:05:49 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:05:49 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:05:56 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:05:56 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:06:39 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:06:39 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:07:05 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:07:05 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:08:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "import1C".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('import1C')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('import1C')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/import1C')
+#3 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/html/bi/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/import1C
+HTTP_REFERER=http://46.101.133.199/index.php?r=site/importGA
+---
+2015/11/03 10:09:21 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:09:21 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:16:20 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:16:20 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:16:29 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:16:29 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:16:29 [error] [php] require(gapi.class.php): failed to open stream: No such file or directory (/var/www/html/bi/protected/views/import/importGA.php:24)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(95): ImportController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(869): ImportController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(782): ImportController->renderPartial()
+#3 /var/www/html/bi/protected/controllers/ImportController.php(33): ImportController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImportGA()
+#5 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/importGA
+in /var/www/html/bi/protected/views/import/importGA.php (24)
+in /var/www/html/bi/protected/views/import/importGA.php (24)
+in /var/www/html/bi/protected/controllers/ImportController.php (33)
+2015/11/03 10:18:46 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:18:46 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:18:46 [error] [php] require(gapi.class.php): failed to open stream: No such file or directory (/var/www/html/bi/protected/views/import/importGA.php:24)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(95): ImportController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(869): ImportController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(782): ImportController->renderPartial()
+#3 /var/www/html/bi/protected/controllers/ImportController.php(33): ImportController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImportGA()
+#5 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/importGA
+in /var/www/html/bi/protected/views/import/importGA.php (24)
+in /var/www/html/bi/protected/views/import/importGA.php (24)
+in /var/www/html/bi/protected/controllers/ImportController.php (33)
+2015/11/03 10:19:34 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:19:34 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:19:34 [error] [exception.Exception] exception 'Exception' with message 'GAPI: Failed load key file "/test/integrateGA-6727fbd5be3b.p12". File could not be found.' in /var/www/html/bi/protected/components/gapi.class.php:632
+Stack trace:
+#0 /var/www/html/bi/protected/components/gapi.class.php(54): gapiOAuth2->fetchToken('667531573047-t1...', '/test/integrate...', NULL)
+#1 /var/www/html/bi/protected/views/import/importGA.php(27): gapi->__construct('667531573047-t1...', '/test/integrate...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(782): CController->renderPartial('importGA', Array, true)
+#6 /var/www/html/bi/protected/controllers/ImportController.php(33): CController->render('importGA', Array)
+#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImportGA()
+#8 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/html/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('importGA')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('import/importGA')
+#13 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/html/bi/index.php(14): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=import/importGA
+HTTP_REFERER=http://46.101.133.199/index.php?r=import/importGA
+---
+2015/11/03 10:20:18 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:20:18 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:20:34 [error] [exception.Exception] exception 'Exception' with message 'No valid root parameter or aggregate metric called "Updated"' in /var/www/html/bi/protected/components/gapi.class.php:409
+Stack trace:
+#0 /var/www/html/bi/protected/views/import/importGA.php(80): gapi->__call('getUpdated', Array)
+#1 /var/www/html/bi/protected/views/import/importGA.php(80): gapi->getUpdated()
+#2 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(782): CController->renderPartial('importGA', Array, true)
+#6 /var/www/html/bi/protected/controllers/ImportController.php(33): CController->render('importGA', Array)
+#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImportGA()
+#8 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/html/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('importGA')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('import/importGA')
+#13 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/html/bi/index.php(14): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=import/importGA
+HTTP_REFERER=http://46.101.133.199/index.php?r=import/importGA
+---
+2015/11/03 10:21:08 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:21:08 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:21:17 [error] [exception.Exception] exception 'Exception' with message 'No valid root parameter or aggregate metric called "Updated"' in /var/www/html/bi/protected/components/gapi.class.php:409
+Stack trace:
+#0 /var/www/html/bi/protected/views/import/importGA.php(80): gapi->__call('getUpdated', Array)
+#1 /var/www/html/bi/protected/views/import/importGA.php(80): gapi->getUpdated()
+#2 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(782): CController->renderPartial('importGA', Array, true)
+#6 /var/www/html/bi/protected/controllers/ImportController.php(33): CController->render('importGA', Array)
+#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImportGA()
+#8 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/html/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('importGA')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('import/importGA')
+#13 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/html/bi/index.php(14): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=import/importGA
+HTTP_REFERER=http://46.101.133.199/index.php?r=import/importGA
+---
+2015/11/03 10:23:01 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:23:01 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (29)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:33:02 [error] [php] file_get_contents(1c_xml.txt): failed to open stream: No such file or directory (/var/www/html/bi/protected/views/import/import1C.php:16)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(95): ImportController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(869): ImportController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(782): ImportController->renderPartial()
+#3 /var/www/html/bi/protected/controllers/ImportController.php(17): ImportController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#5 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/import1C
+in /var/www/html/bi/protected/views/import/import1C.php (16)
+in /var/www/html/bi/protected/controllers/ImportController.php (17)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:33:17 [error] [php] include(JsonXMLElement.php): failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /var/www/html/bi/protected/views/import/import1C.php(18): simplexml_load_string()
+#2 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#3 /var/www/html/yii/framework/web/CBaseController.php(95): ImportController->renderInternal()
+#4 /var/www/html/yii/framework/web/CController.php(869): ImportController->renderFile()
+#5 /var/www/html/yii/framework/web/CController.php(782): ImportController->renderPartial()
+#6 /var/www/html/bi/protected/controllers/ImportController.php(17): ImportController->render()
+#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#8 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#10 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#11 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#12 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/import1C
+in /var/www/html/bi/protected/views/import/import1C.php (18)
+in /var/www/html/bi/protected/controllers/ImportController.php (17)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:33:41 [error] [php] file_get_contents(/test/1c_xml.txt): failed to open stream: No such file or directory (/var/www/html/bi/protected/views/import/import1C.php:16)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(95): ImportController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(869): ImportController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(782): ImportController->renderPartial()
+#3 /var/www/html/bi/protected/controllers/ImportController.php(17): ImportController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#5 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/import1C
+in /var/www/html/bi/protected/views/import/import1C.php (16)
+in /var/www/html/bi/protected/controllers/ImportController.php (17)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:34:19 [error] [php] include(JsonXMLElement.php): failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /var/www/html/bi/protected/views/import/import1C.php(18): simplexml_load_string()
+#2 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#3 /var/www/html/yii/framework/web/CBaseController.php(95): ImportController->renderInternal()
+#4 /var/www/html/yii/framework/web/CController.php(869): ImportController->renderFile()
+#5 /var/www/html/yii/framework/web/CController.php(782): ImportController->renderPartial()
+#6 /var/www/html/bi/protected/controllers/ImportController.php(17): ImportController->render()
+#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#8 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#10 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#11 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#12 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/import1C
+in /var/www/html/bi/protected/views/import/import1C.php (18)
+in /var/www/html/bi/protected/controllers/ImportController.php (17)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:34:46 [error] [php] Trying to get property of non-object (/var/www/html/bi/protected/views/import/import1C.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): ImportController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(782): ImportController->renderPartial()
+#2 /var/www/html/bi/protected/controllers/ImportController.php(17): ImportController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/import1C
+in /var/www/html/bi/protected/views/import/import1C.php (25)
+in /var/www/html/bi/protected/controllers/ImportController.php (17)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:35:34 [error] [php] Undefined variable: xml (/var/www/html/bi/protected/views/import/import1C.php:19)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): ImportController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(782): ImportController->renderPartial()
+#2 /var/www/html/bi/protected/controllers/ImportController.php(17): ImportController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/import1C
+in /var/www/html/bi/protected/views/import/import1C.php (19)
+in /var/www/html/bi/protected/controllers/ImportController.php (17)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:36:01 [error] [php] Array to string conversion (/var/www/html/bi/protected/views/import/import1C.php:46)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): ImportController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(782): ImportController->renderPartial()
+#2 /var/www/html/bi/protected/controllers/ImportController.php(17): ImportController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/import1C
+in /var/www/html/bi/protected/views/import/import1C.php (46)
+in /var/www/html/bi/protected/controllers/ImportController.php (17)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:36:35 [error] [php] Array to string conversion (/var/www/html/bi/protected/views/import/import1C.php:49)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): ImportController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(782): ImportController->renderPartial()
+#2 /var/www/html/bi/protected/controllers/ImportController.php(17): ImportController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/import1C
+in /var/www/html/bi/protected/views/import/import1C.php (49)
+in /var/www/html/bi/protected/controllers/ImportController.php (17)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:37:34 [error] [php] Array to string conversion (/var/www/html/bi/protected/views/import/import1C.php:49)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): ImportController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(782): ImportController->renderPartial()
+#2 /var/www/html/bi/protected/controllers/ImportController.php(17): ImportController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/import1C
+in /var/www/html/bi/protected/views/import/import1C.php (49)
+in /var/www/html/bi/protected/controllers/ImportController.php (17)
+in /var/www/html/bi/index.php (14)
+2015/11/03 10:39:08 [error] [php] Undefined offset: 0 (/var/www/html/bi/protected/views/import/import1C.php:43)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(95): ImportController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(869): ImportController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(782): ImportController->renderPartial()
+#3 /var/www/html/bi/protected/controllers/ImportController.php(17): ImportController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#5 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/import1C
+in /var/www/html/bi/protected/views/import/import1C.php (43)
+in /var/www/html/bi/protected/views/import/import1C.php (53)
+in /var/www/html/bi/protected/controllers/ImportController.php (17)
+2015/11/03 10:41:49 [error] [php] Undefined offset: 0 (/var/www/html/bi/protected/views/import/import1C.php:43)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(95): ImportController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(869): ImportController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(782): ImportController->renderPartial()
+#3 /var/www/html/bi/protected/controllers/ImportController.php(17): ImportController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#5 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/import1C
+in /var/www/html/bi/protected/views/import/import1C.php (43)
+in /var/www/html/bi/protected/views/import/import1C.php (53)
+in /var/www/html/bi/protected/controllers/ImportController.php (17)
+2015/11/03 10:44:42 [error] [php] Undefined offset: 0 (/var/www/html/bi/protected/views/import/import1C.php:43)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(95): ImportController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(869): ImportController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(782): ImportController->renderPartial()
+#3 /var/www/html/bi/protected/controllers/ImportController.php(17): ImportController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#5 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/import1C
+in /var/www/html/bi/protected/views/import/import1C.php (43)
+in /var/www/html/bi/protected/views/import/import1C.php (54)
+in /var/www/html/bi/protected/controllers/ImportController.php (17)
+2015/11/03 10:46:30 [error] [php] Undefined offset: 0 (/var/www/html/bi/protected/views/import/import1C.php:43)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(95): ImportController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(869): ImportController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(782): ImportController->renderPartial()
+#3 /var/www/html/bi/protected/controllers/ImportController.php(17): ImportController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#5 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/import1C
+in /var/www/html/bi/protected/views/import/import1C.php (43)
+in /var/www/html/bi/protected/views/import/import1C.php (54)
+in /var/www/html/bi/protected/controllers/ImportController.php (17)
+2015/11/03 10:57:22 [error] [php] Illegal string offset 'name' (/var/www/html/bi/protected/views/import/import1C.php:36)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/html/yii/framework/web/CBaseController.php(95): ImportController->renderInternal()
+#2 /var/www/html/yii/framework/web/CController.php(869): ImportController->renderFile()
+#3 /var/www/html/yii/framework/web/CController.php(782): ImportController->renderPartial()
+#4 /var/www/html/bi/protected/controllers/ImportController.php(17): ImportController->render()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#6 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#8 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#10 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/import1C
+in /var/www/html/bi/protected/views/import/import1C.php (36)
+in /var/www/html/bi/protected/views/import/import1C.php (56)
+in /var/www/html/bi/protected/views/import/import1C.php (65)
+2015/11/03 11:12:28 [error] [exception.CException] exception 'CException' with message 'Group and its behaviors do not have a method or closure named "exist".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('exist', Array)
+#1 /var/www/html/bi/protected/views/import/import1C.php(36): CActiveRecord->__call('exist', Array)
+#2 /var/www/html/bi/protected/views/import/import1C.php(36): Group->exist('name=??????????...')
+#3 /var/www/html/bi/protected/views/import/import1C.php(54): process_group(Array, '02.01.2014')
+#4 /var/www/html/bi/protected/views/import/import1C.php(63): process_date(Array)
+#5 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#6 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(782): CController->renderPartial('import1C', Array, true)
+#9 /var/www/html/bi/protected/controllers/ImportController.php(17): CController->render('import1C', Array)
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#11 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/html/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('import1C')
+#15 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('import/import1C')
+#16 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /var/www/html/bi/index.php(14): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=import/import1C
+HTTP_REFERER=http://46.101.133.199/index.php?r=import/import1C
+---
+2015/11/03 11:12:57 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column '»Пылесосы' in 'where clause'. The SQL statement executed was: SELECT 1 FROM `group` `t` WHERE name=»Пылесосы/роботы» LIMIT 1.
+in /var/www/html/bi/protected/views/import/import1C.php (36)
+in /var/www/html/bi/protected/views/import/import1C.php (54)
+in /var/www/html/bi/protected/views/import/import1C.php (63)
+2015/11/03 11:12:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column '»Пылесосы' in 'where clause'. The SQL statement executed was: SELECT 1 FROM `group` `t` WHERE name=»Пылесосы/роботы» LIMIT 1' in /var/www/html/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1675): CDbCommand->queryRow()
+#2 /var/www/html/bi/protected/views/import/import1C.php(36): CActiveRecord->exists('name=??????????...')
+#3 /var/www/html/bi/protected/views/import/import1C.php(54): process_group(Array, '02.01.2014')
+#4 /var/www/html/bi/protected/views/import/import1C.php(63): process_date(Array)
+#5 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#6 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(782): CController->renderPartial('import1C', Array, true)
+#9 /var/www/html/bi/protected/controllers/ImportController.php(17): CController->render('import1C', Array)
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#11 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/html/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('import1C')
+#15 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('import/import1C')
+#16 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /var/www/html/bi/index.php(14): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=import/import1C
+HTTP_REFERER=http://46.101.133.199/index.php?r=import/import1C
+---
+2015/11/03 11:24:14 [error] [exception.CException] exception 'CException' with message 'Property "Profit.day" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('day')
+#1 /var/www/html/bi/protected/views/import/import1C.php(43): CActiveRecord->__get('day')
+#2 /var/www/html/bi/protected/views/import/import1C.php(54): process_group(Array, '02.01.2014')
+#3 /var/www/html/bi/protected/views/import/import1C.php(63): process_date(Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(782): CController->renderPartial('import1C', Array, true)
+#8 /var/www/html/bi/protected/controllers/ImportController.php(17): CController->render('import1C', Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#10 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('import1C')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('import/import1C')
+#15 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/html/bi/index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=import/import1C
+HTTP_REFERER=http://46.101.133.199/index.php?r=import/import1C
+---
+2015/11/03 11:28:49 [error] [exception.CDbException] exception 'CDbException' with message 'The active record cannot be updated because it is new.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:1121
+Stack trace:
+#0 /var/www/html/bi/protected/views/import/import1C.php(37): CActiveRecord->update()
+#1 /var/www/html/bi/protected/views/import/import1C.php(56): process_group(Array, '02.01.2014')
+#2 /var/www/html/bi/protected/views/import/import1C.php(65): process_date(Array)
+#3 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/b...')
+#4 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/b...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/b...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(782): CController->renderPartial('import1C', Array, true)
+#7 /var/www/html/bi/protected/controllers/ImportController.php(17): CController->render('import1C', Array)
+#8 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#9 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('import1C')
+#13 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('import/import1C')
+#14 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/html/bi/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=import/import1C
+HTTP_REFERER=http://46.101.133.199/index.php?r=import/import1C
+---
+2015/11/03 15:47:22 [error] [php] move_uploaded_file(/test/tmp.ttt): failed to open stream: No such file or directory (/var/www/html/yii/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#1 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#3 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#7 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/import1C
+in /var/www/html/bi/protected/controllers/ImportController.php (11)
+in /var/www/html/bi/index.php (14)
+2015/11/03 15:48:31 [error] [php] move_uploaded_file(/test/): failed to open stream: Is a directory (/var/www/html/yii/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#1 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#3 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#7 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/import1C
+in /var/www/html/bi/protected/controllers/ImportController.php (11)
+in /var/www/html/bi/index.php (14)
+2015/11/03 15:48:57 [error] [exception.CException] exception 'CException' with message 'CUploadedFile and its behaviors do not have a method or closure named "save".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/bi/protected/controllers/ImportController.php(11): CComponent->__call('save', Array)
+#1 /var/www/html/bi/protected/controllers/ImportController.php(11): CUploadedFile->save('/test/')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ImportController->actionImport1C()
+#3 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('import1C')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('import/import1C')
+#8 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/html/bi/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=import/import1C
+HTTP_REFERER=http://46.101.133.199/index.php?r=import/import1C
+---
+2015/11/03 15:52:21 [error] [php] Missing argument 1 for CUploadedFile::saveAs(), called in /var/www/html/bi/protected/controllers/ImportController.php on line 11 and defined (/var/www/html/yii/framework/web/CUploadedFile.php:193)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/yii/framework/web/CController.php(286): ImportController->runAction()
+#2 /var/www/html/yii/framework/web/CController.php(265): ImportController->runActionWithFilters()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(282): ImportController->run()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/bi/index.php(14): CWebApplication->run()
+REQUEST_URI=/index.php?r=import/import1C
+in /var/www/html/bi/protected/controllers/ImportController.php (11)
+in /var/www/html/bi/index.php (14)
+2015/11/03 15:57:18 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (93)
+in /var/www/html/bi/index.php (14)
+2015/11/03 15:57:18 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (93)
+in /var/www/html/bi/index.php (14)
+2015/11/04 01:56:54 [warning] [application] Failed to set unsafe attribute "name" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (93)
+in /var/www/html/bi/index.php (14)
+2015/11/04 01:56:54 [warning] [application] Failed to set unsafe attribute "email" of "ImportGAForm".
+in /var/www/html/bi/protected/controllers/ImportController.php (93)
+in /var/www/html/bi/index.php (14)
