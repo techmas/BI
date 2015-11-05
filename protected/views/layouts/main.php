@@ -31,12 +31,12 @@
 	<div id="main-menu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-				array('label'=>'Номенклатура', 'url'=>array('/group/index')),
-				array('label'=>'Выручка', 'url'=>array('/revenue/index')),
-				array('label'=>'Прибыль', 'url'=>array('/profit/index')),
-                array('label'=>'Визиты', 'url'=>array('/visits/index')),
-                array('label'=>'Импорт 1С', 'url'=>array('/import/import1C')),
-                array('label'=>'Импорт GA', 'url'=>array('/import/importGA')),
+				array('label'=>'Номенклатура', 'url'=>array('/group/index'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Выручка', 'url'=>array('/revenue/index'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Прибыль', 'url'=>array('/profit/index'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Визиты', 'url'=>array('/visits/index'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Импорт 1С', 'url'=>array('/import/import1C'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Импорт GA', 'url'=>array('/import/importGA'), 'visible'=>!Yii::app()->user->isGuest),
  			),
 		)); ?>
 	</div>

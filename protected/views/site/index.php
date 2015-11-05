@@ -6,6 +6,8 @@ $this->pageTitle=Yii::app()->name;
 
 <h1>Добро пожаловать в <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
+<?php if(!Yii::app()->user->isGuest):?>
+
 <canvas id="canvas"></canvas>
 <script type="text/javascript">
 		var doughnutData = [
@@ -50,3 +52,7 @@ $this->pageTitle=Yii::app()->name;
 
 
 </script>
+    <?php else : ?>
+    <p>Пожалуйста авторизуйтесь</p>
+<?php endif?>
+
