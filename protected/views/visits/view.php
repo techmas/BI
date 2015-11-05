@@ -7,6 +7,7 @@ $this->breadcrumbs=array(
 	$model->id,
 );
 
+
 $this->menu=array(
 	array('label'=>'List Visits', 'url'=>array('index')),
 	array('label'=>'Create Visits', 'url'=>array('create')),
@@ -18,11 +19,12 @@ $this->menu=array(
 
 <h1>View Visits #<?php echo $model->id; ?></h1>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php /* $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'date',
 		'total',
+		'sales_id',
 	),
-)); ?>
+)); */
+?>

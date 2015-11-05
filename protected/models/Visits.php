@@ -5,8 +5,11 @@
  *
  * The followings are the available columns in table 'visits':
  * @property integer $id
- * @property string $date
  * @property integer $total
+ * @property integer $sales_id
+ *
+ * The followings are the available model relations:
+ * @property Sales $sales
  */
 class Visits extends CActiveRecord
 {
@@ -26,11 +29,11 @@ class Visits extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('total', 'numerical', 'integerOnly'=>true),
-			array('date', 'safe'),
+			array('sales_id', 'required'),
+			array('total, sales_id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, date, total', 'safe', 'on'=>'search'),
+			array('id, total, sales_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -42,6 +45,7 @@ class Visits extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'sales' => array(self::BELONGS_TO, 'Sales', 'sales_id'),
 		);
 	}
 
@@ -52,8 +56,8 @@ class Visits extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'date' => 'Date',
 			'total' => 'Total',
+			'sales_id' => 'Sales',
 		);
 	}
 
@@ -76,8 +80,8 @@ class Visits extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('date',$this->date,true);
 		$criteria->compare('total',$this->total);
+		$criteria->compare('sales_id',$this->sales_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

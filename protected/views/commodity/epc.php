@@ -3,12 +3,12 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Commodities',
+    'Commodities',
 );
 
 $this->menu=array(
-	array('label'=>'Create Commodity', 'url'=>array('create')),
-	array('label'=>'Manage Commodity', 'url'=>array('admin')),
+    array('label'=>'Create Commodity', 'url'=>array('create')),
+    array('label'=>'Manage Commodity', 'url'=>array('admin')),
 );
 
 //$dataProvider->setPagination(false);

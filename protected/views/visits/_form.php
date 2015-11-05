@@ -20,15 +20,15 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'date'); ?>
-		<?php echo $form->textField($model,'date'); ?>
-		<?php echo $form->error($model,'date'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'total'); ?>
 		<?php echo $form->textField($model,'total'); ?>
 		<?php echo $form->error($model,'total'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'sales_id'); ?>
+		<?php echo $form->textField($model,'sales_id'); ?>
+		<?php echo $form->error($model,'sales_id'); ?>
 	</div>
 
 	<div class="row buttons">

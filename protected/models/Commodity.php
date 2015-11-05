@@ -5,13 +5,13 @@
  *
  * The followings are the available columns in table 'commodity':
  * @property integer $id
- * @property integer $group
- * @property integer $revenue
+ * @property string $name
  * @property integer $profit
- * @property integer $orders
- * @property integer $costs
- * @property integer $turnover
- * @property integer $clicks
+ * @property integer $revenue
+ * @property integer $sales_id
+ *
+ * The followings are the available model relations:
+ * @property Sales $sales
  */
 class Commodity extends CActiveRecord
 {
@@ -31,11 +31,12 @@ class Commodity extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, group, revenue, profit, orders, costs, turnover, clicks', 'required'),
-			array('id, group, revenue, profit, orders, costs, turnover, clicks', 'numerical', 'integerOnly'=>true),
+			array('sales_id', 'required'),
+			array('profit, revenue, sales_id', 'numerical', 'integerOnly'=>true),
+			array('name', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, group, revenue, profit, orders, costs, turnover, clicks', 'safe', 'on'=>'search'),
+			array('id, name, profit, revenue, sales_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -47,6 +48,7 @@ class Commodity extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'sales' => array(self::BELONGS_TO, 'Sales', 'sales_id'),
 		);
 	}
 
@@ -57,13 +59,10 @@ class Commodity extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'group' => 'Group',
-			'revenue' => 'Revenue',
+			'name' => 'Name',
 			'profit' => 'Profit',
-			'orders' => 'Orders',
-			'costs' => 'Costs',
-			'turnover' => 'Turnover',
-			'clicks' => 'Clicks',
+			'revenue' => 'Revenue',
+			'sales_id' => 'Sales',
 		);
 	}
 
@@ -86,13 +85,10 @@ class Commodity extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('group',$this->group);
-		$criteria->compare('revenue',$this->revenue);
+		$criteria->compare('name',$this->name,true);
 		$criteria->compare('profit',$this->profit);
-		$criteria->compare('orders',$this->orders);
-		$criteria->compare('costs',$this->costs);
-		$criteria->compare('turnover',$this->turnover);
-		$criteria->compare('clicks',$this->clicks);
+		$criteria->compare('revenue',$this->revenue);
+		$criteria->compare('sales_id',$this->sales_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

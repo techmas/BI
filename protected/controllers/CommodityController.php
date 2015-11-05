@@ -45,7 +45,13 @@ class CommodityController extends Controller
 		);
 	}
 
-	/**
+    public function actionEpc()
+    {
+        $this->render('epc'),
+        ));
+    }
+
+    /**
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
 	 */

@@ -17,13 +17,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'group'); ?>
-		<?php echo $form->textField($model,'group'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'revenue'); ?>
-		<?php echo $form->textField($model,'revenue'); ?>
+		<?php echo $form->label($model,'name'); ?>
+		<?php echo $form->textField($model,'name',array('size'=>45,'maxlength'=>45)); ?>
 	</div>
 
 	<div class="row">
@@ -32,23 +27,13 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'orders'); ?>
-		<?php echo $form->textField($model,'orders'); ?>
+		<?php echo $form->label($model,'revenue'); ?>
+		<?php echo $form->textField($model,'revenue'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'costs'); ?>
-		<?php echo $form->textField($model,'costs'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'turnover'); ?>
-		<?php echo $form->textField($model,'turnover'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'clicks'); ?>
-		<?php echo $form->textField($model,'clicks'); ?>
+		<?php echo $form->label($model,'sales_id'); ?>
+		<?php echo $form->textField($model,'sales_id'); ?>
 	</div>
 
 	<div class="row buttons">

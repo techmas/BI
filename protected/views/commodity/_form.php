@@ -20,21 +20,9 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'id'); ?>
-		<?php echo $form->textField($model,'id'); ?>
-		<?php echo $form->error($model,'id'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'group'); ?>
-		<?php echo $form->textField($model,'group'); ?>
-		<?php echo $form->error($model,'group'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'revenue'); ?>
-		<?php echo $form->textField($model,'revenue'); ?>
-		<?php echo $form->error($model,'revenue'); ?>
+		<?php echo $form->labelEx($model,'name'); ?>
+		<?php echo $form->textField($model,'name',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'name'); ?>
 	</div>
 
 	<div class="row">
@@ -44,27 +32,15 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'orders'); ?>
-		<?php echo $form->textField($model,'orders'); ?>
-		<?php echo $form->error($model,'orders'); ?>
+		<?php echo $form->labelEx($model,'revenue'); ?>
+		<?php echo $form->textField($model,'revenue'); ?>
+		<?php echo $form->error($model,'revenue'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'costs'); ?>
-		<?php echo $form->textField($model,'costs'); ?>
-		<?php echo $form->error($model,'costs'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'turnover'); ?>
-		<?php echo $form->textField($model,'turnover'); ?>
-		<?php echo $form->error($model,'turnover'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'clicks'); ?>
-		<?php echo $form->textField($model,'clicks'); ?>
-		<?php echo $form->error($model,'clicks'); ?>
+		<?php echo $form->labelEx($model,'sales_id'); ?>
+		<?php echo $form->textField($model,'sales_id'); ?>
+		<?php echo $form->error($model,'sales_id'); ?>
 	</div>
 
 	<div class="row buttons">

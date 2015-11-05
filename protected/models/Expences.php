@@ -1,24 +1,24 @@
 <?php
 
 /**
- * This is the model class for table "group".
+ * This is the model class for table "expences".
  *
- * The followings are the available columns in table 'group':
+ * The followings are the available columns in table 'expences':
  * @property integer $id
- * @property string $name
+ * @property integer $total
+ * @property integer $sales_id
  *
  * The followings are the available model relations:
- * @property Profit[] $profits
- * @property Revenue[] $revenues
+ * @property Sales $sales
  */
-class Group extends CActiveRecord
+class Expences extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'group';
+		return 'expences';
 	}
 
 	/**
@@ -29,10 +29,11 @@ class Group extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name', 'length', 'max'=>45),
+			array('sales_id', 'required'),
+			array('total, sales_id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name', 'safe', 'on'=>'search'),
+			array('id, total, sales_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -44,8 +45,7 @@ class Group extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'profits' => array(self::HAS_MANY, 'Profit', 'group_id'),
-			'revenues' => array(self::HAS_MANY, 'Revenue', 'group_id'),
+			'sales' => array(self::BELONGS_TO, 'Sales', 'sales_id'),
 		);
 	}
 
@@ -56,7 +56,8 @@ class Group extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'name' => 'Name',
+			'total' => 'Total',
+			'sales_id' => 'Sales',
 		);
 	}
 
@@ -79,7 +80,8 @@ class Group extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('name',$this->name,true);
+		$criteria->compare('total',$this->total);
+		$criteria->compare('sales_id',$this->sales_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -90,7 +92,7 @@ class Group extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Group the static model class
+	 * @return Expences the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

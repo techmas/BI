@@ -9,35 +9,21 @@
 	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('group')); ?>:</b>
-	<?php echo CHtml::encode($data->group); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('revenue')); ?>:</b>
-	<?php echo CHtml::encode($data->revenue); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('name')); ?>:</b>
+	<?php echo CHtml::encode($data->name); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('profit')); ?>:</b>
 	<?php echo CHtml::encode($data->profit); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('orders')); ?>:</b>
-	<?php echo CHtml::encode($data->orders); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('revenue')); ?>:</b>
+	<?php echo CHtml::encode($data->revenue); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('costs')); ?>:</b>
-	<?php echo CHtml::encode($data->costs); ?>
+	<b><?php echo "Date" ?>:</b>
+    <?php echo CHtml::encode(Sales::model()->findByPk($data->sales_id)->date); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('turnover')); ?>:</b>
-	<?php echo CHtml::encode($data->turnover); ?>
-	<br />
-
-	<?php /*
-	<b><?php echo CHtml::encode($data->getAttributeLabel('clicks')); ?>:</b>
-	<?php echo CHtml::encode($data->clicks); ?>
-	<br />
-
-	*/ ?>
 
 </div>

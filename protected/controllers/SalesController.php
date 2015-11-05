@@ -1,6 +1,6 @@
 <?php
 
-class ProfitController extends Controller
+class SalesController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -62,14 +62,14 @@ class ProfitController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Profit;
+		$model=new Sales;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Profit']))
+		if(isset($_POST['Sales']))
 		{
-			$model->attributes=$_POST['Profit'];
+			$model->attributes=$_POST['Sales'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -91,9 +91,9 @@ class ProfitController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Profit']))
+		if(isset($_POST['Sales']))
 		{
-			$model->attributes=$_POST['Profit'];
+			$model->attributes=$_POST['Sales'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -122,7 +122,7 @@ class ProfitController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Profit');
+		$dataProvider=new CActiveDataProvider('Sales');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -133,10 +133,10 @@ class ProfitController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Profit('search');
+		$model=new Sales('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Profit']))
-			$model->attributes=$_GET['Profit'];
+		if(isset($_GET['Sales']))
+			$model->attributes=$_GET['Sales'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -147,12 +147,12 @@ class ProfitController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Profit the loaded model
+	 * @return Sales the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Profit::model()->findByPk($id);
+		$model=Sales::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -160,11 +160,11 @@ class ProfitController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Profit $model the model to be validated
+	 * @param Sales $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='profit-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='sales-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

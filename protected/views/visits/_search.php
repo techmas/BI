@@ -17,13 +17,13 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'date'); ?>
-		<?php echo $form->textField($model,'date'); ?>
+		<?php echo $form->label($model,'total'); ?>
+		<?php echo $form->textField($model,'total'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'total'); ?>
-		<?php echo $form->textField($model,'total'); ?>
+		<?php echo $form->label($model,'sales_id'); ?>
+		<?php echo $form->textField($model,'sales_id'); ?>
 	</div>
 
 	<div class="row buttons">

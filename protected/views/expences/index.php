@@ -1,18 +1,18 @@
 <?php
-/* @var $this ProfitController */
+/* @var $this ExpencesController */
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Прибыль по дням',
+	'Expences',
 );
 
 $this->menu=array(
-	array('label'=>'Create Profit', 'url'=>array('create')),
-	array('label'=>'Manage Profit', 'url'=>array('admin')),
+	array('label'=>'Create Expences', 'url'=>array('create')),
+	array('label'=>'Manage Expences', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Прибыль по дням</h1>
+<h1>Expences</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

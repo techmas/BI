@@ -4,7 +4,7 @@
 
 $this->breadcrumbs=array(
 	'Commodities'=>array('index'),
-	$model->id,
+	$model->name,
 );
 
 $this->menu=array(
@@ -22,12 +22,9 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'group',
-		'revenue',
+		'name',
 		'profit',
-		'orders',
-		'costs',
-		'turnover',
-		'clicks',
+		'revenue',
+		'sales_id',
 	),
 )); ?>

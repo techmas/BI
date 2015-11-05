@@ -1,6 +1,6 @@
 <?php
-/* @var $this GroupController */
-/* @var $model Group */
+/* @var $this ExpencesController */
+/* @var $model Expences */
 /* @var $form CActiveForm */
 ?>
 
@@ -17,8 +17,13 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'name'); ?>
-		<?php echo $form->textField($model,'name',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->label($model,'total'); ?>
+		<?php echo $form->textField($model,'total'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'sales_id'); ?>
+		<?php echo $form->textField($model,'sales_id'); ?>
 	</div>
 
 	<div class="row buttons">
