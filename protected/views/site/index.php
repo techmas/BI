@@ -75,6 +75,47 @@ $this->pageTitle=Yii::app()->name;
 
 </div>
 <div class="clear"></div>
+<div class="over"></div>
+
+<div class="dash3">
+<h1>Данные индексации</h1>
+<a class="settings" href="#">настройка</a>
+<ul>
+    <li>12 ошибок индексации</li>
+    <li>97 индексированно</li>
+    <li>76 нужно оптимизировать</li>
+</ul>
+
+	<button>Подробнее</button>
+</div>
+<div class="clear"></div>
+
+<div class="dash-information">
+<h1>Справочная информация</h1>
+<a class="settings" href="#">настройка</a>
+<div class="info-block">
+	<a href="#" class="close"></a>
+<h3>Повышение эффективности анализа</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat rutrum ultrices. Nam pellentesque aliquam metus, vitae suscipit odio semper sit amet. Aenean sit amet sollicitudin dolor. Nunc at dui ligula, vitae facilisis turpis. Sed turpis sem, ultricies vel ullamcorper id, egestas sed tortor. Aliquam vel mollis neque. Fusce consequat vestibulum augue ac sagittis.</p>
+<button>Узнать</button>
+</div>
+
+<div class="info-block">
+	<a href="#" class="close"></a>
+<h3>Инструменты для контроля входа</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat rutrum ultrices. Nam pellentesque aliquam metus, vitae suscipit odio semper sit amet. Aenean sit amet sollicitudin dolor. Nunc at dui ligula, vitae facilisis turpis. Sed turpis sem, ultricies vel ullamcorper id, egestas sed tortor. Aliquam vel mollis neque. Fusce consequat vestibulum augue ac sagittis.</p>
+<button>Узнать</button>
+</div>
+
+<div class="info-block">
+	<a href="#" class="close"></a>
+<h3>Эффективная индексация</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat rutrum ultrices. Nam pellentesque aliquam metus, vitae suscipit odio semper sit amet. Aenean sit amet sollicitudin dolor. Nunc at dui ligula, vitae facilisis turpis. Sed turpis sem, ultricies vel ullamcorper id, egestas sed tortor. Aliquam vel mollis neque. Fusce consequat vestibulum augue ac sagittis.</p>
+<button>Узнать</button>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
 
 <script>
 	var randomScalingFactor = function(){ return Math.round(Math.random()*100)};

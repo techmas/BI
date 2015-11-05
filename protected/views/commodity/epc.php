@@ -1,9 +1,7 @@
 <?php
-/* @var $this CommodityController */
-/* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-    'Commodities',
+    'Доходность',
 );
 
 $this->menu=array(
@@ -15,31 +13,42 @@ $this->menu=array(
 //$models = $dataProvider->getData();
 $sales = Sales::model()->findAll();
 
-$profit = array(array('Дата', 'Прибыль'));
-$revenue = array(array('Дата', 'Выручка'));
+$epc = array(array('Дата', 'EPC'));
+$out = array(array('Дата', 'Выручка', 'Посещения', 'EPC'));
 foreach ($sales as $model) {
-    $total_profit = 0;
     $total_revenue = 0;
+    $total_visits = 0;
     foreach ($model->commodities as $commodity) {
-        $total_profit += $commodity->profit;
         $total_revenue += $commodity->revenue;
     }
-    array_push($profit, array($model->date, $total_profit));
-    array_push($revenue, array($model->date, $total_revenue));
+    foreach ($model->visits as $visits) {
+        $total_visits += $visits->total;
+    }
+    $total_epc = ($total_visits != 0) ? $total_revenue / $total_visits : 0;
+    array_push($out, array($model->date, $total_revenue, $total_visits, $total_epc));
+    array_push($epc, array($model->date, $total_epc));
 }
 ?>
 
 
-<h1>Учетные данные</h1>
+<h1>Доходность</h1>
 
 <?php
 $this->widget('HzlVisualizationChart', array('visualization' => 'LineChart',
-    'data' => $profit,
-    'options' => array('title' => 'Прибыль за последний месяц')));
-
-$this->widget('HzlVisualizationChart', array('visualization' => 'LineChart',
-    'data' => $revenue,
-    'options' => array('title' => 'Выручка за последний месяц')));
+    'data' => $epc,
+    'options' => array('title' => 'Доходность одного клика (EPC)')));
 
 ?>
+
+<table>
+    <?php foreach ($out as $model): ?>
+        <tr>
+            <td><?php echo $model[0]; ?></td>
+            <td><?php echo $model[1]; ?></td>
+            <td><?php echo $model[2]; ?></td>
+            <td><?php echo $model[3]; ?></td>
+        </tr>
+    <?php endforeach;?>
+</table>
+
 

@@ -17,7 +17,7 @@
 </head>
 <body>
 	<div id="header">
-		<div id="logo">Мета<b>Аналитика</b></div>
+		<a href="/" style="text-decoration:none"><div id="logo">Мета<b>Аналитика</b></div></a>
 	
 	<div id="user-personal">
 		<?php $this->widget('zii.widgets.CMenu',array(
@@ -33,7 +33,7 @@
 			'items'=>array(
 				array('label'=>'Учетные данные', 'url'=>array('/commodity/index'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Веб-аналитика', 'url'=>array('/visits/index'), 'visible'=>!Yii::app()->user->isGuest),
-				array('label'=>'Доходность', 'url'=>array('/profit/index'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Доходность', 'url'=>array('/commodity/epc'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Администрирование', 'url'=>array('/import/import'), 'visible'=>!Yii::app()->user->isGuest),
  			),
 		)); ?>
