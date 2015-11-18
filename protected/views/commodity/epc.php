@@ -14,7 +14,7 @@ $this->menu=array(
 $sales = Sales::model()->findAll();
 
 $epc = array(array('Дата', 'EPC'));
-$out = array(array('Дата', 'Выручка', 'Посещения', 'EPC'));
+$out = array();
 foreach ($sales as $model) {
     $total_revenue = 0;
     $total_visits = 0;
@@ -40,9 +40,15 @@ $this->widget('HzlVisualizationChart', array('visualization' => 'LineChart',
 
 ?>
 
-<table>
+<table class="table-data">
+    <tr class="table-head">
+        <td>Дата </td>
+        <td>Выручка</td>
+        <td>Посещения </td>
+        <td>EPC</td>
+    </tr>
     <?php foreach ($out as $model): ?>
-        <tr>
+        <tr class="table-data">
             <td><?php echo $model[0]; ?></td>
             <td><?php echo $model[1]; ?></td>
             <td><?php echo $model[2]; ?></td>

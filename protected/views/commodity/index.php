@@ -48,15 +48,15 @@ $models = $dataProvider->getData();
     ?>
 </div>
 
-<table>
-    <tr>
+<table class="table-data">
+    <tr class="table-head">
         <td>Дата</td>
         <td>Номенклатура</td>
         <td>Прибыль</td>
         <td>Выручка</td>
     </tr>
     <?php foreach ($models as $model): ?>
-    <tr>
+    <tr class="table-data">
         <td><?php echo Sales::model()->findByPk($model->sales_id)->date; ?></td>
         <td><?php echo $model->name; ?></td>
         <td><?php echo $model->profit; ?></td>
