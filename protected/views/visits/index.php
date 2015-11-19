@@ -25,8 +25,7 @@ foreach ($models as $model) {
 
 <h1>Веб-Аналитика</h1>
 
-<?php
-$this->widget('HzlVisualizationChart', array('visualization' => 'LineChart',
+<?php $this->widget('ChartForm', array(
     'data' => $visits,
-    'options' => array('title' => 'Посещения за последний месяц')));
-?>
+    'title' => 'Посещения за последний месяц')); ?>
+

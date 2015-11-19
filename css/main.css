@@ -10,18 +10,20 @@ blockquote:before, blockquote:after, q:before, q:after {content:'';}
 blockquote, q {quotes:"" "";}
 a img {border:none;}
 :focus {outline:0;}
-
+.clear{clear: both;}
 
 *{font-family: 'ProximaNova', sans-serif; font-weight: 100; }
-body { margin: 0; padding: 0; color: #555; background: #AFAB98;overflow-x: ;}
+body { margin: 0; padding: 0; color: #555; background: #999;overflow-x: ;}
 b{font-weight: 600;}
 a{color: #FD625E}
-h1{font-size: 24pt; color: #AFAB98;}
-.container{min-height: 500px;position: relative;overflow-x: hidden;}
+a:hover{color: #555}
+h1{font-size: 24pt; color: #AFAB98; padding: 20px 0}
+.container{min-height: 500px;position: relative;}
 #page { background: white;}
 
 #header { margin: 0; padding: 0;}
-#content { padding: 20px; width: 70%; box-sizing: border-box; }
+.header-cat-name{position: absolute; color: white; left: 500px; top: -85px; z-index: 99; margin: 0; padding: 0}
+#content { padding: 20px; box-sizing: border-box; }
 #sidebar { padding: 20px 20px 20px 0; float: right; width: 30%;box-sizing: border-box;  position: absolute; top: 85px; right: -1px; border:1px solid #AFAB98;}
 #footer { padding: 10px; margin: 10px; font-size: 12pt; color: white }
 #logo { padding: 10px 20px; font-size: 200%;color: white; width: 50%}
@@ -60,3 +62,67 @@ div.search-form { padding: 10px; margin: 10px 0; background: #eee;}
 .operations li a:visited {}
 .operations li a:hover { background: #f0f0f0;}
 table.detail-view tr.odd {background: #f0f0f0 !important;}
+.dash1,.dash2,.dash3{width: 100%; position: relative;}
+.dash1 .col1{width: 40%; float: left;}
+
+.dash1 .col1 button{cursor: pointer; border: 1px solid #FD625E; color: #FD625E; text-align: center; background-color: white; font-size: 21px; width: 30%; padding: 15px; }
+.dash1 .col1 button.active{color: white; background-color: #FD625E}
+.dash1 .col1 button.active:hover{color: white; background-color: #FD625E; border: 1px solid #FD625E;}
+.dash1 .col1 button:hover{border:1px solid #69D7C6; color: #69D7C6}
+.dash1 .col1 ul{margin:30px 0; padding:0 30px 0 0}
+
+.dash1 .col1 ul li{ list-style: none;  height: 100px; display: block; font-size: 20px;}
+.dash1 .col1 ul > li:before{background:#FD625E; content: ""; width: 24px; height: 24px; display: inline-block; margin-right: 10px; border-radius: 100% }
+.dash1 .col1 ul > li:nth-child(2):before{background: #69D7C6;}
+.dash1 .col1 ul > li:nth-child(3):before{background: #7E4D76;}
+.dash1 .col1 ul li span{ display: block; font-size: 24px; text-align: right; color: #AFAB98;}
+.dash1 .col2{width: 60%; float: right;}
+.dash1 .col2 canvas{max-height: 500px;}
+
+.dash2 .round-sheme{float: left; width: 400px; background: #f0f0f0; margin-right: 20px; padding: 20px; height: 460px; position: relative;}
+.dash2 .round-sheme h4{font-size: 24px; margin: -7px 0 0 0; padding: 0}
+.dash2 .round-sheme button{cursor: pointer; border: 1px solid #FD625E; color: #FD625E; text-align: center; background-color: transparent; font-size: 21px; width: 90%; padding: 15px; position: absolute; bottom: 20px}
+.dash2 .round-sheme button:hover{color: white; background-color: #FD625E; border: 1px solid #FD625E;}
+.dash2 .round-sheme .close{ position: absolute; right: 20px; top: 20px; background: url(../images/close-img.png); background-size: 25px 25px; height: 25px; width: 25px; display: inline-block; }
+.dash2 .round-sheme ul li {list-style: none; display: inline-block; margin-right: 20px;}
+.dash2 .round-sheme ul li:before{background:#FD625E; content: ""; width: 24px; height: 24px; display: inline-block; margin-right: 10px;}
+.dash2 .round-sheme ul li:nth-child(2):before{background: #69D7C6;}
+.dash2 .round-sheme ul li:nth-child(3):before{background: #7E4D76;}
+.dash2 .round-sheme canvas{width: 400px; height: 300px;}
+
+.dash3{}
+.dash3 ul li:first-child{margin-left: 0;}
+.dash3 ul li{ list-style: none;  height: 100px; display: inline-block; font-size: 20px; margin-left: 30px;}
+.dash3 ul > li:before{background:#FD625E; content: ""; width: 24px; height: 24px; display: inline-block; margin-right: 10px; border-radius: 100% }
+.dash3 ul > li:nth-child(2):before{background: #69D7C6;}
+.dash3 ul > li:nth-child(3):before{background: #7E4D76;}
+.dash3 button{}
+
+.dash3 button{cursor: pointer; border: 1px solid #FD625E; color: #FD625E; text-align: center; background-color: transparent; font-size: 21px; width: 200px; height: 51px; padding: 15px; position: absolute; bottom: 20px; right:0; top: 70px;}
+.dash3 button:hover{color: white; background-color: #FD625E; border: 1px solid #FD625E;}
+.dash-information{background-color: #777; margin: -20px; padding: 20px; position: relative;}
+.dash-information .settings{right: 20px; color: #69D7C6}
+.dash-information .settings:hover{color: white}
+.dash-information h1{color: white; margin: 0; padding: 0;}
+.info-block{width: 30%; margin-right: 20px; float: left; position: relative;}
+.info-block p{color: #f0f0f0;}
+.info-block h3{font-size: 22px; color: white}
+
+.info-block button{cursor: pointer; border: 1px solid white; color: white; text-align: center; background-color: transparent; font-size: 21px; width: 200px; height: 51px; padding: 15px; margin-top: 20px;}
+.info-block button:hover{color: #777; background-color: #69D7C6; border: 1px solid #69D7C6;}
+.info-block .close{ position: absolute; right: 20px; bottom: 20px; background: url(../images/close-img.png); background-size: 25px 25px; height: 25px; width: 25px; display: inline-block; }
+
+.over{ padding: 20px 0; border-bottom: 1px solid #ccc}
+.date-order{position: absolute; top: 35px; left: 40%; font-size: 18px;}
+.settings{position: absolute; top: 35px; right: 0;}
+:hover{transition: color 250ms ease-in-out 0s, background-color 250ms ease-in-out 0s, border-color 250ms ease-in-out 0s;}
+#div-chartyw0,#div-chartyw1{background-color: #f0f0f0 !important}
+.web-analytic{}
+.web-analytic,.inbord{border: 1px solid #ccc; float: left; padding: 25px; width: 40%; height: 220px; position: relative; margin-right: 20px;}
+
+.web-analytic .close,.inbord .close{ position: absolute; right: 20px; top: 20px; background: url(../images/close-img.png); background-size: 25px 25px; height: 25px; width: 25px; display: inline-block; z-index: 999 }
+
+.table-data{width: 100%; padding: 25px 0; }
+.table-data .table-head{ background-color: #69D7C6}
+.table-data .table-data:nth-child(odd){background-color: #f0f0f0}
+.table-data td{font-weight: 100; font-size: 22px; padding: 10px;}

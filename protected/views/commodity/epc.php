@@ -33,28 +33,13 @@ foreach ($sales as $model) {
 
 <h1>Доходность</h1>
 
-<?php
-$this->widget('HzlVisualizationChart', array('visualization' => 'LineChart',
+<?php $this->widget('ChartForm', array(
     'data' => $epc,
-    'options' => array('title' => 'Доходность одного клика (EPC)')));
+    'type' => 'epc',
+    'title' => 'Доходность одного клика (EPC)')); ?>
 
-?>
-
-<table class="table-data">
-    <tr class="table-head">
-        <td>Дата </td>
-        <td>Выручка</td>
-        <td>Посещения </td>
-        <td>EPC</td>
-    </tr>
-    <?php foreach ($out as $model): ?>
-        <tr class="table-data">
-            <td><?php echo $model[0]; ?></td>
-            <td><?php echo $model[1]; ?></td>
-            <td><?php echo $model[2]; ?></td>
-            <td><?php echo $model[3]; ?></td>
-        </tr>
-    <?php endforeach;?>
-</table>
+<?php $this->widget('EpcTable', array(
+    'models' => $out,
+    'title' => 'Исходные данные')); ?>
 
 
