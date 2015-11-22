@@ -36,6 +36,7 @@ foreach ($sales as $model) {
 <?php $this->widget('ChartForm', array(
     'data' => $epc,
     'type' => 'epc',
+    'model' => new ChartDataForm(),
     'title' => 'Доходность одного клика (EPC)')); ?>
 
 <?php $this->widget('EpcTable', array(

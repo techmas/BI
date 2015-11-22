@@ -27,5 +27,6 @@ foreach ($models as $model) {
 
 <?php $this->widget('ChartForm', array(
     'data' => $visits,
+    'model' => new ChartDataForm(),
     'title' => 'Посещения за последний месяц')); ?>
 
