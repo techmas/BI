@@ -1,26 +1,32 @@
 <?php
 
 /**
- * This is the model class for table "sales".
+ * This is the model class for table "userview".
  *
- * The followings are the available columns in table 'sales':
+ * The followings are the available columns in table 'userview':
  * @property integer $id
- * @property string $date
+ * @property string $startdate
+ * @property string $enddate
+ * @property integer $chart
+ * @property integer $table
+ * @property integer $selection
+ * @property integer $period_id
+ * @property integer $user_id
+ * @property integer $indicator_id
  *
  * The followings are the available model relations:
- * @property Commodity[] $commodities
- * @property Expences[] $expences
- * @property Measure[] $measures
- * @property Visits[] $visits
+ * @property Period $period
+ * @property User $user
+ * @property Indicator $indicator
  */
-class Sales extends CActiveRecord
+class Userview extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'sales';
+		return 'userview';
 	}
 
 	/**
@@ -31,10 +37,12 @@ class Sales extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('date', 'safe'),
+			array('id, period_id, user_id, indicator_id', 'required'),
+			array('id, chart, table, selection, period_id, user_id, indicator_id', 'numerical', 'integerOnly'=>true),
+			array('startdate, enddate, selection, id', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, date', 'safe', 'on'=>'search'),
+			array('id, startdate, enddate, chart, table, selection, period_id, user_id, indicator_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -46,10 +54,9 @@ class Sales extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'commodities' => array(self::HAS_MANY, 'Commodity', 'sales_id'),
-			'expences' => array(self::HAS_MANY, 'Expences', 'sales_id'),
-			'measures' => array(self::HAS_MANY, 'Measure', 'sales_id'),
-			'visits' => array(self::HAS_MANY, 'Visits', 'sales_id'),
+			'period' => array(self::BELONGS_TO, 'Period', 'period_id'),
+			'user' => array(self::BELONGS_TO, 'User', 'user_id'),
+			'indicator' => array(self::BELONGS_TO, 'Indicator', 'indicator_id'),
 		);
 	}
 
@@ -60,7 +67,14 @@ class Sales extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'date' => 'Date',
+			'startdate' => 'Startdate',
+			'enddate' => 'Enddate',
+			'chart' => 'Chart',
+			'table' => 'Table',
+			'selection' => 'Selection',
+			'period_id' => 'Period',
+			'user_id' => 'User',
+			'indicator_id' => 'Indicator',
 		);
 	}
 
@@ -83,7 +97,14 @@ class Sales extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('date',$this->date,true);
+		$criteria->compare('startdate',$this->startdate,true);
+		$criteria->compare('enddate',$this->enddate,true);
+		$criteria->compare('chart',$this->chart);
+		$criteria->compare('table',$this->table);
+		$criteria->compare('selection',$this->selection);
+		$criteria->compare('period_id',$this->period_id);
+		$criteria->compare('user_id',$this->user_id);
+		$criteria->compare('indicator_id',$this->indicator_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -94,7 +115,7 @@ class Sales extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Sales the static model class
+	 * @return Userview the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

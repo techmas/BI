@@ -29,14 +29,27 @@
 	</div>
 	</div>
 	<div id="main-menu">
-		<?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
+		<?php
+        $categories = Category::model()->findAll();
+        $items = array();
+        foreach ($categories as $category) {
+            array_push($items, array(
+                    'label'=>$category->name,
+                    'url'=>'index.php?r=category/show&id='.$category->id,
+                    'visible'=>!Yii::app()->user->isGuest)
+
+            );
+        }
+        $this->widget('zii.widgets.CMenu',array(
+			'items'=> $items
+                /*array(
 				array('label'=>'Учетные данные', 'url'=>array('/commodity/index'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Веб-аналитика', 'url'=>array('/visits/index'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Доходность', 'url'=>array('/commodity/epc'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Администрирование', 'url'=>array('/import/import'), 'visible'=>!Yii::app()->user->isGuest),
- 			),
-		)); ?>
+ 			    ),*/
+		    ));
+        ?>
 	</div>
 <div class="container" id="page">
 	<?php if(isset($this->breadcrumbs)):?>
@@ -61,3 +74,4 @@
 
 </body>
 </html>
+

@@ -16,8 +16,6 @@ $this->menu=array(
 $dataProvider->setPagination(false);
 $models = $dataProvider->getData();
 
-$list = Commodity::model()->findAll();
-
 ?>
 
 <?php if(Yii::app()->user->hasFlash('success')): ?>
@@ -29,24 +27,41 @@ $list = Commodity::model()->findAll();
 
 <h1>Учетные данные</h1>
 
+<div class="graphic-add">
+    <a href="javascript:void(0);" class="show-add-number">Добавить показатель</a>
+    <div>
+    <a href="javascript:void(0);" class="close-add-number"></a>
+            <input type="text" placeholder="Показатель">
+            <input type="text" placeholder="Значение">
+            <input type="text" placeholder="Переменная">
+            <input type="submit" value="Добавить">
+    </div>
+</div>
 
-<?php $this->widget('ChartForm', array(
+
+<?php
+
+$list = Commodity::model()->findAll();
+
+
+$this->widget('ChartForm', array(
     'data' => $profit,
     'list' => $list,
     'model' => $profitForm,
     'type' => 'profit',
-    'title' => 'Прибыль')); ?>
+    'title' => 'Прибыль')); 
 
-<?php $this->widget('ChartForm', array(
+$this->widget('ChartForm', array(
     'data' => $revenue,
     'list' => $list,
     'model' => $revenueForm,
     'type' => 'revenue',
-    'title' => 'Выручка')); ?>
+    'title' => 'Выручка')); 
 
-<?php $this->widget('CommodityTable', array(
+$this->widget('CommodityTable', array(
     'models' => $models,
-    'title' => 'Исходные данные')); ?>
+    'title' => 'Исходные данные')); 
+?>
 
 
 

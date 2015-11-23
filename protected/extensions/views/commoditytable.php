@@ -1,6 +1,6 @@
-
 <table class="table-data">
     <tr class="table-head">
+    <td></td>
         <td>Дата</td>
         <td>Номенклатура</td>
         <td>Прибыль</td>
@@ -8,6 +8,7 @@
     </tr>
     <?php foreach ($models as $model): ?>
     <tr class="table-data">
+    <td><input type="checkbox"></td>
         <td><?php echo Sales::model()->findByPk($model->sales_id)->date; ?></td>
         <td><?php echo $model->name; ?></td>
         <td><?php echo $model->profit; ?></td>

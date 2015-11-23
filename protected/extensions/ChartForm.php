@@ -12,7 +12,7 @@ class ChartForm extends CWidget
     public $title;
     public $type;
     public $list;
-    public $model;
+    public $userview;
 
     public function run()
     {
@@ -21,7 +21,7 @@ class ChartForm extends CWidget
         $this->render('chartform', array(
             'data' => $this->data,
             'title' => $this->title,
-            'model' => $this->model,
+            'userview' => $this->userview,
             'list' => $this->list,
             'type' => $this->type,
         ));

@@ -37,13 +37,13 @@ h1{font-size: 24pt; color: #AFAB98; padding: 20px 0}
 #main-menu ul li a { color:#ffffff; background-color:transparent; font-size:14pt; text-decoration:none; padding:5px 10px;}
 #main-menu ul li a:hover{ color: #FD625E; background-color: white; text-decoration:none;}
 #main-menu ul li.active a{ color: #FD625E; background-color: #f0f0f0; text-decoration:none;}
-div.flash-error, div.flash-notice, div.flash-success { padding:.8em; margin-bottom:1em; border:2px solid #ddd;}
+div.flash-error, div.flash-notice, div.flash-success { padding:.8em; margin-bottom:1em;}
 div.flash-error { background:#FBE3E4; color:#8a1f11; border-color:#FBC2C4;}
 div.flash-notice { background:#FFF6BF; color:#514721; border-color:#FFD324;}
-div.flash-success { background:#E6EFC2; color:#264409; border-color:#C6D880;}
+div.flash-success {}
 div.flash-error a { color:#8a1f11;}
 div.flash-notice a { color:#514721;}
-div.flash-success a { color:#264409;}
+div.flash-success a {}
 div.form .rememberMe label { display: inline;}
 div.view { padding: 10px; margin: 10px 0; border-bottom: 1px solid #AFAB98;}
 div.view:last-child{border: 0}
@@ -116,13 +116,53 @@ table.detail-view tr.odd {background: #f0f0f0 !important;}
 .date-order{position: absolute; top: 35px; left: 40%; font-size: 18px;}
 .settings{position: absolute; top: 35px; right: 0;}
 :hover{transition: color 250ms ease-in-out 0s, background-color 250ms ease-in-out 0s, border-color 250ms ease-in-out 0s;}
-#div-chartyw0,#div-chartyw1{background-color: #f0f0f0 !important}
 .web-analytic{}
-.web-analytic,.inbord{border: 1px solid #ccc; float: left; padding: 25px; width: 40%; height: 220px; position: relative; margin-right: 20px;}
+.web-analytic,.inboard{border: 1px solid #ccc; float: left; padding: 25px; width: 49%; height: 300px; position: relative; margin: 0 1% 1% 0;box-sizing: border-box; }
+.web-analytic:hover,.inboard:hover{border: 1px solid #69D7C6;}
+.web-analytic .close,.inboard-active .close{ position: absolute; right: 20px; top: 20px; background: url(../images/close-img.png); background-size: 25px 25px; height: 25px; width: 25px; display: inline-block; z-index: 900 }
 
-.web-analytic .close,.inbord .close{ position: absolute; right: 20px; top: 20px; background: url(../images/close-img.png); background-size: 25px 25px; height: 25px; width: 25px; display: inline-block; z-index: 999 }
-
-.table-data{width: 100%; padding: 25px 0; }
-.table-data .table-head{ background-color: #69D7C6}
-.table-data .table-data:nth-child(odd){background-color: #f0f0f0}
+.table-data{width: 100%; padding: 15px 0; }
+.table-data tr:first-child{ background-color: #69D7C6 !important}
+.table-data tr:nth-child(odd){background-color: #f0f0f0}
 .table-data td{font-weight: 100; font-size: 22px; padding: 10px;}
+.table-data tr:hover{background-color: #ccc}
+.inboard-active{border: 1px solid #ccc; padding: 25px; width: 100%; position: relative; margin: 0 20px 20px 0; box-sizing: border-box; clear: both;
+float: left; }
+.customize-graph{display: none; height: 200px; position: absolute; top: 25px; left: 50%}
+.customize-graph input[type="submit"]{cursor: pointer; border: 1px solid #FD625E; color: #FD625E; text-align: center; background-color: transparent; font-size: 21px; width: 100%; padding: 15px; position: absolute; bottom: 0;}
+
+
+.customize-graph input[type="text"]{ border:0; border-bottom: 1px solid gray; font-size: 16pt;color: #FD625E; margin-top: 25px; text-align: center; width: 100%}
+
+.inboard svg text[text-anchor="start"]{font-size: 12pt !important}
+.flash-success{color: #69D7C6; border: 1px solid #69D7C6; background: white;}
+.select-drop-down{background: #69D7C6; border: 0; padding: 5px; color: white; font-size: 16px}
+.my-drop-down option:hover{background: #FD625E}
+.check-list{display: none; clear: both; margin-top: 25px;}
+.check-list li{list-style: none; display: inline-block; border: 1px solid #FD625E; padding:3px 5px ; margin-right: 10px; margin-bottom: 10px;}
+.check-list li:nth-child(2n){border: 1px solid #69D7C6;}
+.check-list li:nth-child(3n){border: 1px solid #7E4D76;}
+.graphic-add{width: 50%; position: relative; right: 0px; margin-top: -60px; text-align: right; float: right;}
+.graphic-add div{display: none; width: 50%; padding:50px 25px 15px 25px;  border: 1px solid #ccc; background: white; position: absolute; z-index: 999; right: 0; top: -10px;}
+.graphic-add div input{width: 100%; box-sizing: border-box; margin-bottom: 15px; font-size: 16pt; padding: 10px;}
+.graphic-add div input[type="submit"]{cursor: pointer; border: 1px solid #FD625E; color: #FD625E; text-align: center; background-color: transparent; font-size: 21px; padding: 15px; bottom: 0;}
+.graphic-add div .close-add-number{ position: absolute; right: 10px; top: 10px; background: url(../images/close-img.png); background-size: 25px 25px; height: 25px; width: 25px; display: inline-block; z-index: 999 }
+input[type="submit"]:hover{background: #FD625E !important; color: white !important}
+.ask-content{display: none; width: 25%; float: right; position: absolute; top: 25px; right: 25px}
+.ask-content h3{font-size: 18px;}
+.extend{
+ position: relative;
+ display: block;
+ cursor: pointer;
+ border: 1px solid #FD625E;
+ color: #FD625E;
+ text-align: center;
+ background-color: transparent;
+ font-size: 21px;
+ width: 100%;
+ padding: 5px 0;
+ bottom: 0;
+ text-decoration: none;
+}
+
+.extend:hover{background: #FD625E; color: white;}

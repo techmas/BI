@@ -1,26 +1,24 @@
 <?php
 
 /**
- * This is the model class for table "sales".
+ * This is the model class for table "period".
  *
- * The followings are the available columns in table 'sales':
+ * The followings are the available columns in table 'period':
  * @property integer $id
- * @property string $date
+ * @property string $name
+ * @property string $value
  *
  * The followings are the available model relations:
- * @property Commodity[] $commodities
- * @property Expences[] $expences
- * @property Measure[] $measures
- * @property Visits[] $visits
+ * @property Userview[] $userviews
  */
-class Sales extends CActiveRecord
+class Period extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'sales';
+		return 'period';
 	}
 
 	/**
@@ -31,10 +29,10 @@ class Sales extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('date', 'safe'),
+			array('name, value', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, date', 'safe', 'on'=>'search'),
+			array('id, name, value', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -46,10 +44,7 @@ class Sales extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'commodities' => array(self::HAS_MANY, 'Commodity', 'sales_id'),
-			'expences' => array(self::HAS_MANY, 'Expences', 'sales_id'),
-			'measures' => array(self::HAS_MANY, 'Measure', 'sales_id'),
-			'visits' => array(self::HAS_MANY, 'Visits', 'sales_id'),
+			'userviews' => array(self::HAS_MANY, 'Userview', 'period_id'),
 		);
 	}
 
@@ -60,7 +55,8 @@ class Sales extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'date' => 'Date',
+			'name' => 'Name',
+			'value' => 'Value',
 		);
 	}
 
@@ -83,7 +79,8 @@ class Sales extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('date',$this->date,true);
+		$criteria->compare('name',$this->name,true);
+		$criteria->compare('value',$this->value,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -94,7 +91,7 @@ class Sales extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Sales the static model class
+	 * @return Period the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
