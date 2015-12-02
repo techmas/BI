@@ -5,7 +5,7 @@
  *
  * The followings are the available columns in table 'measure':
  * @property integer $id
- * @property integer $epc
+ * @property double $epc
  * @property integer $ltv
  * @property integer $arpu
  * @property integer $crs
@@ -32,8 +32,9 @@ class Measure extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('sales_id', 'required'),
-			array('id, epc, ltv, arpu, crs, sales_id', 'numerical', 'integerOnly'=>true),
+			array('epc, sales_id', 'required'),
+			array('ltv, arpu, crs, sales_id', 'numerical', 'integerOnly'=>true),
+			array('epc', 'numerical'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, epc, ltv, arpu, crs, sales_id', 'safe', 'on'=>'search'),

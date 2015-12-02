@@ -24,6 +24,24 @@ class DataUtil {
         return $sales;
     }
 
+    function getSalesByDates($startdate, $enddate) {
+        $criteria = new CDbCriteria;
+        $criteria->condition = "date BETWEEN STR_TO_DATE('".
+            $startdate."', '%Y-%m-%d') AND STR_TO_DATE('".
+            $enddate."', '%Y-%m-%d') ORDER BY date ASC";
+        $sales = Sales::model()->findAll($criteria);
+        return $sales;
+    }
+
+    function getIndicatorValue($indicator, $sale) {
+        $args = explode(".", $indicator->value);
+        $table = $args[0];
+        $column = $args[1];
+        $total = 0;
+        foreach ($sale->$table as $data) $total += $data->$column;
+        return $total;
+    }
+
     function calculateEPC() {
         $user = User::model()->findByPk(1);
         $indicator = Indicator::model()->findByPk(4);

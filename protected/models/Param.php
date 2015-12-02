@@ -1,24 +1,25 @@
 <?php
 
 /**
- * This is the model class for table "user".
+ * This is the model class for table "param".
  *
- * The followings are the available columns in table 'user':
+ * The followings are the available columns in table 'param':
  * @property integer $id
  * @property string $name
+ * @property string $value
+ * @property integer $user_id
  *
  * The followings are the available model relations:
- * @property Param[] $params
- * @property Userview[] $userviews
+ * @property User $user
  */
-class User extends CActiveRecord
+class Param extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'user';
+		return 'param';
 	}
 
 	/**
@@ -29,10 +30,12 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name', 'length', 'max'=>45),
+			array('user_id', 'required'),
+			array('user_id', 'numerical', 'integerOnly'=>true),
+			array('name, value', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name', 'safe', 'on'=>'search'),
+			array('id, name, value, user_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -44,8 +47,7 @@ class User extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'params' => array(self::HAS_MANY, 'Param', 'user_id'),
-			'userviews' => array(self::HAS_MANY, 'Userview', 'user_id'),
+			'user' => array(self::BELONGS_TO, 'User', 'user_id'),
 		);
 	}
 
@@ -57,6 +59,8 @@ class User extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'name' => 'Name',
+			'value' => 'Value',
+			'user_id' => 'User',
 		);
 	}
 
@@ -80,6 +84,8 @@ class User extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('name',$this->name,true);
+		$criteria->compare('value',$this->value,true);
+		$criteria->compare('user_id',$this->user_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -90,7 +96,7 @@ class User extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return User the static model class
+	 * @return Param the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

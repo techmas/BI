@@ -5,6 +5,56 @@ class ImportController extends Controller
 
     public function actionImport()
     {
+        $user = User::model()->findByPK(1);
+        $token = "";
+        foreach ($user->params as $param) {
+            $token = ($param->name == "directToken") ? $param->value : "";
+        }
+        if ($token == "") {
+            $code = Yii::app()->request->getParam('code');
+            $link = Yii::app()->direct->getAuthorizeUrl();
+            if (!$code) $this->redirect($link);
+            $token = Yii::app()->direct->getDirectToken($code);
+            $param = new Param();
+            $param->name = "directToken";
+            $param->value = $token;
+            $param->user_id = $user->id;
+            $param->save();
+        }
+
+        Yii::app()->direct->setToken($token);
+
+        $result = Yii::app()->direct->getSummaryStat(array(
+            'CampaignIDS' => array(115158),
+            'StartDate' => '2014-01-01',
+            'EndDate' => '2015-12-01',
+        ));
+
+
+        if (!$result) {
+            echo "error". Yii::app()->direct->getError();
+        }
+
+        print_r($result);
+
+        foreach ($result as $item)
+            foreach ($item as $row) {
+                echo $row['CampaignID']."wef<br>";
+            }
+
+
+        $result = Yii::app()->direct->GetBalance(array(115158
+            //'CampaignIDS' => array(1),
+            //'StartDate' => '2007-01-01',
+            //'EndDate' => '2016-01-01',
+        ));
+
+        foreach ($result as $item)
+            foreach ($item as $row) {
+                echo $row['CampaignID']."<br>";
+            }
+        print_r($result);
+
         $model1C = new Import1CForm();
         $modelGA = new ImportGAForm();
         $out = "";
@@ -133,7 +183,20 @@ class ImportController extends Controller
         }
 
         $ga->requestReportData(ga_profile_id, $dimensions ,$metric, $sort, null, $startDate, $endDate);
-        foreach($ga->getResults() as $result) $out .= storeVisit($result);
+        // foreach($ga->getResults() as $result) $out .= storeVisit($result);
+
+        $dimensions=array('goalCompletionLocation');
+        $goal = 'goal2ConversionRate';
+        $method = "get".$goal;
+        $metric=array($goal);
+        $startDate="2015-10-01";
+        $endDate="2015-11-01";
+        $filter="";
+        $sort="";
+
+        $ga->requestReportData(ga_profile_id, $dimensions ,$metric, $sort, null, $startDate, $endDate);
+        foreach($ga->getResults() as $result)
+            $out .= "r".$result->$method();
 
         return $out;
     }

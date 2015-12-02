@@ -40,6 +40,20 @@ return array(
 			'allowAutoLogin'=>true,
 		),
 
+        'curl' => array(
+            'class' => 'ext.curl.Curl',
+            //'options' => array(/.. additional curl options ../)
+        ),
+
+        'direct' => array(
+            'class' => 'ext.YiiDirectApi.YiiDirectApi',
+            'id' => '7ff79d66fb7f420b88ecfaa0bbfb058a',
+            'password' => '746941c4e95044c49e6fcdb7473cf98f',
+            'useSandbox' => true, # использовать ли песочницу. по умолчанию false — использует боевое API
+            'locale' => 'ru', # на каком языке отдавать ответы. Если не указан, то используется язык приложения
+            'responseType' => 'code', # Тип ответа от яндекса при получении токена (code, token). Если не указан, то используется code.
+        ),
+
 		// uncomment the following to enable URLs in path-format
 
 		/*'urlManager'=>array(
