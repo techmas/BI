@@ -25,6 +25,8 @@ $this->menu=array(
 		'name',
 		'profit',
 		'revenue',
+		'quantity',
 		'sales_id',
+		'platform_id',
 	),
 )); ?>

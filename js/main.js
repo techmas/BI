@@ -21,6 +21,45 @@ $('.close').click( function()
 	  event.stopPropagation();
 	} );
 
+/*
+  $('.indicator').click(function() {
+	$(this).toggleClass('active');
+  });
+
+  $('.date-type .indicator').click(function() {
+    $('.date-type .indicator').removeClass('active');
+    if(!$(this).next().is(".active"))
+	{
+     $(this).toggleClass('active');
+    }
+  });
+*/
+    var data=[];
+
+    function indicatorClick(e, num) {
+        if ($(e).is(".active")) {
+            data[num]=lineChartData.datasets[num].data;
+            lineChartData.datasets[num].data=[];
+        } else {
+            lineChartData.datasets[num].data=data[num];
+        }
+        $(e).toggleClass("active");
+        window.myLine.update();
+    }
+
+    function platformClick(e, num) {
+        $(e).toggleClass("active");
+    }
+
+    function periodClick(e, num) {
+        $('.date-type .indicator').removeClass('active');
+        if(!$(e).next().is(".active"))
+        {
+            $(e).toggleClass('active');
+        }
+        window.myLine.removeData();
+        window.myLine.update();
+    }
 
 
 	$('.show-add-number').click(function() {
@@ -34,7 +73,7 @@ $('.close').click( function()
 	} );
 
 	
-	$( '.flash-success' ).delay( 3000 ).slideUp( 300 );
+	//$( '.flash-success' ).delay( 3000 ).slideUp( 300 );
 
 
 /*

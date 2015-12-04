@@ -3,30 +3,18 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Веб-аналитика',
+	'Visits',
 );
-
 
 $this->menu=array(
 	array('label'=>'Create Visits', 'url'=>array('create')),
 	array('label'=>'Manage Visits', 'url'=>array('admin')),
 );
-
-$dataProvider->setPagination(false);
-$models = $dataProvider->getData();
-
-$visits = array(array('Дата', 'Визиты'));
-$dates = array();
-foreach ($models as $model) {
-    array_push($visits, array(Sales::model()->findByPk($model->sales_id)->date, intval($model->total)));
-}
 ?>
 
+<h1>Visits</h1>
 
-<h1>Веб-Аналитика</h1>
-
-<?php $this->widget('ChartForm', array(
-    'data' => $visits,
-    'model' => new ChartDataForm(),
-    'title' => 'Посещения за последний месяц')); ?>
-
+<?php $this->widget('zii.widgets.CListView', array(
+	'dataProvider'=>$dataProvider,
+	'itemView'=>'_view',
+)); ?>

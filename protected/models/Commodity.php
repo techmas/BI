@@ -8,10 +8,13 @@
  * @property string $name
  * @property integer $profit
  * @property integer $revenue
+ * @property integer $quantity
  * @property integer $sales_id
+ * @property integer $platform_id
  *
  * The followings are the available model relations:
  * @property Sales $sales
+ * @property Platform $platform
  */
 class Commodity extends CActiveRecord
 {
@@ -31,12 +34,12 @@ class Commodity extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('sales_id', 'required'),
-			array('profit, revenue, sales_id', 'numerical', 'integerOnly'=>true),
+			array('quantity, sales_id, platform_id', 'required'),
+			array('profit, revenue, quantity, sales_id, platform_id', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, profit, revenue, sales_id', 'safe', 'on'=>'search'),
+			array('id, name, profit, revenue, quantity, sales_id, platform_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -49,6 +52,7 @@ class Commodity extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'sales' => array(self::BELONGS_TO, 'Sales', 'sales_id'),
+			'platform' => array(self::BELONGS_TO, 'Platform', 'platform_id'),
 		);
 	}
 
@@ -62,7 +66,9 @@ class Commodity extends CActiveRecord
 			'name' => 'Name',
 			'profit' => 'Profit',
 			'revenue' => 'Revenue',
+			'quantity' => 'Quantity',
 			'sales_id' => 'Sales',
+			'platform_id' => 'Platform',
 		);
 	}
 
@@ -88,7 +94,9 @@ class Commodity extends CActiveRecord
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('profit',$this->profit);
 		$criteria->compare('revenue',$this->revenue);
+		$criteria->compare('quantity',$this->quantity);
 		$criteria->compare('sales_id',$this->sales_id);
+		$criteria->compare('platform_id',$this->platform_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

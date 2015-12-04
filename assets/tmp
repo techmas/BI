@@ -1,63 +1,43 @@
+
 <xml>
 
 <date>
-
-<day>05.10.2015</day>
-
+<day>02.10.2015</day>
+<orders>13</orders>
 <group>
-<name>Роботы-гоботы</name>
+<name>»Пылесосы/роботы»</name>
 <quantity>1</quantity>
-<revenue>190</revenue>
-<profit>51</profit>
+<revenue>18190</revenue>
+<profit>502</profit>
 </group>
-
 <group>
-<name>Машины стиральные</name>
-<quantity>211</quantity>
-<revenue>1000</revenue>
-<profit>2000</profit>
+<name>»Стиральные машины фронтальные до 48 см»</name>
+<quantity>2</quantity>
+<revenue>39190</revenue>
+<profit>2150</profit>
 </group>
-
 </date>
 
 <date>
-<day>08.10.2015</day>
+<day>03.10.2015</day>
+<orders>15</orders>
 <group>
-<name>Пылесосы</name>
-<quantity>12</quantity>
-<revenue>43229</revenue>
-<profit>10200</profit>
+<name>»Пылесосы с мешком»</name>
+<quantity>3</quantity>
+<revenue>25439</revenue>
+<profit>9999</profit>
 </group>
 </date>
 
-
-<date>
-
-<day>09.10.2015</day>
-
-<group>
-<name>Роботы-гоботы</name>
-<quantity>12</quantity>
-<revenue>1910</revenue>
-<profit>5111</profit>
-</group>
-
-<group>
-<name>Машины посудомоечные</name>
-<quantity>21</quantity>
-<revenue>12000</revenue>
-<profit>12000</profit>
-</group>
-
-</date>
 
 <date>
 <day>10.10.2015</day>
+<orders>115</orders>
 <group>
-<name>Сосы</name>
-<quantity>12</quantity>
-<revenue>3229</revenue>
-<profit>4000</profit>
+<name>»Пылесосы с мешком»</name>
+<quantity>13</quantity>
+<revenue>1000</revenue>
+<profit>5555</profit>
 </group>
 </date>
 

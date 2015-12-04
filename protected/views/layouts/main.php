@@ -16,7 +16,9 @@
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 <body>
-	<div id="header">
+
+
+    <div id="header">
 		<a href="/" style="text-decoration:none"><div id="logo">Мета<b>Аналитика</b></div></a>
 	
 	<div id="user-personal">
@@ -68,9 +70,10 @@
 <div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by Мета<b>Аналитика</b>
 </div><!-- footer -->
-<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/сhart.min.js"></script>
-<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/main.js"></script>
+
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/Chart-2.2.min.js"></script>
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/main.js"></script>
 
 </body>
 </html>

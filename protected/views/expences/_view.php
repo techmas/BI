@@ -17,5 +17,9 @@
 	<?php echo CHtml::encode($data->sales_id); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('platform_id')); ?>:</b>
+	<?php echo CHtml::encode($data->platform_id); ?>
+	<br />
+
 
 </div>

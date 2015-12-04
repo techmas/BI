@@ -28,7 +28,7 @@ class CommodityController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','epc'),
+				'actions'=>array('index','view'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -45,12 +45,7 @@ class CommodityController extends Controller
 		);
 	}
 
-    public function actionEpc()
-    {
-        $this->render('epc');
-    }
-
-    /**
+	/**
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
 	 */
@@ -127,64 +122,9 @@ class CommodityController extends Controller
 	 */
 	public function actionIndex()
 	{
-        $model = new ChartDataForm();
-//        $profitForm = new ChartDataForm();
-//        $revenueForm = new ChartDataForm();
-
-        $model->startDate = date('01/m/Y'); // hard-coded '01' for first day
-        $model->endDate  = date('t/m/Y');
-        $profitForm = $model;
-        $revenueForm = $model;
-
-        if(isset($_POST['ChartDataForm'])) {
-            $model->attributes = $_POST['ChartDataForm'];
-            $out = "";
-            switch ($model->type) {
-                case 'profit':
-                    $out .= "PROFIT";
-                    $profitForm = $model;
-                    break;
-                case 'revenue':
-                    $out .= "REVENUE";
-                    $revenueForm = $model;
-                    break;
-            }
-            foreach($_POST['ChartDataForm'] as $name=>$value)
-            {
-                $out .= $name."=".$value." ";
-            }
-            Yii::app()->user->setFlash('success', 'Данные обновлены ');
-        }
-
-
-        $startDate = str_replace('/', '-', $model->startDate);
-        $endDate = str_replace('/', '-', $model->endDate);
-
-        $criteria = new CDbCriteria;
-        //$criteria->addBetweenCondition('date', $startDate, $model->endDate);
-        $criteria->condition = "date BETWEEN STR_TO_DATE('$startDate', '%d-%m-%Y') AND STR_TO_DATE('$endDate', '%d-%m-%Y') ORDER BY date ASC";
-        $sales = Sales::model()->findAll($criteria);
-
-        $profit = array(array('Дата', 'Прибыль'));
-        $revenue = array(array('Дата', 'Выручка'));
-        if ($sales) foreach ($sales as $model) {
-            $total_profit = 0;
-            $total_revenue = 0;
-            foreach ($model->commodities as $commodity) {
-                $total_profit += $commodity->profit;
-                $total_revenue += $commodity->revenue;
-            }
-            array_push($profit, array($model->date, $total_profit));
-            array_push($revenue, array($model->date, $total_revenue));
-        }
-
 		$dataProvider=new CActiveDataProvider('Commodity');
-        $this->render('index',array(
+		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
-            'profit'=>$profit,
-            'profitForm'=>$profitForm,
-            'revenueForm'=>$revenueForm,
-            'revenue'=>$revenue,
 		));
 	}
 

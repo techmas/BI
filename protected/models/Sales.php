@@ -9,8 +9,10 @@
  *
  * The followings are the available model relations:
  * @property Commodity[] $commodities
+ * @property Conversion[] $conversions
  * @property Expences[] $expences
  * @property Measure[] $measures
+ * @property Orders[] $orders
  * @property Visits[] $visits
  */
 class Sales extends CActiveRecord
@@ -47,8 +49,10 @@ class Sales extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'commodities' => array(self::HAS_MANY, 'Commodity', 'sales_id'),
+			'conversions' => array(self::HAS_MANY, 'Conversion', 'sales_id'),
 			'expences' => array(self::HAS_MANY, 'Expences', 'sales_id'),
 			'measures' => array(self::HAS_MANY, 'Measure', 'sales_id'),
+			'orders' => array(self::HAS_MANY, 'Orders', 'sales_id'),
 			'visits' => array(self::HAS_MANY, 'Visits', 'sales_id'),
 		);
 	}

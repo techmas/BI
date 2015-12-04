@@ -32,9 +32,9 @@ class Measure extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('epc, sales_id', 'required'),
-			array('ltv, arpu, crs, sales_id', 'numerical', 'integerOnly'=>true),
-			array('epc', 'numerical'),
+			array('sales_id', 'required'),
+			array('sales_id', 'numerical', 'integerOnly'=>true),
+			array('epc, crs, ltv, arpu', 'numerical'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, epc, ltv, arpu, crs, sales_id', 'safe', 'on'=>'search'),

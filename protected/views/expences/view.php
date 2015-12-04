@@ -24,5 +24,6 @@ $this->menu=array(
 		'id',
 		'total',
 		'sales_id',
+		'platform_id',
 	),
 )); ?>

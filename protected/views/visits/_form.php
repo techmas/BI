@@ -31,6 +31,12 @@
 		<?php echo $form->error($model,'sales_id'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'platform_id'); ?>
+		<?php echo $form->textField($model,'platform_id'); ?>
+		<?php echo $form->error($model,'platform_id'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

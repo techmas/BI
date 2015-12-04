@@ -32,8 +32,18 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->label($model,'quantity'); ?>
+		<?php echo $form->textField($model,'quantity'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model,'sales_id'); ?>
 		<?php echo $form->textField($model,'sales_id'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'platform_id'); ?>
+		<?php echo $form->textField($model,'platform_id'); ?>
 	</div>
 
 	<div class="row buttons">

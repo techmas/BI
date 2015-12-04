@@ -13,8 +13,12 @@
 	<?php echo CHtml::encode($data->total); ?>
 	<br />
 
-    <b><?php echo "Date" ?>:</b>
-    <?php echo CHtml::encode(Sales::model()->findByPk($data->sales_id)->date); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('sales_id')); ?>:</b>
+	<?php echo CHtml::encode($data->sales_id); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('platform_id')); ?>:</b>
+	<?php echo CHtml::encode($data->platform_id); ?>
 	<br />
 
 

@@ -135,7 +135,7 @@ class CategoryController extends Controller
     public function actionShow($id)
     {
         if ($id == 3) {
-            DataUtil::calculateEPC();
+            // DataUtil::calculateEPC();
         }
         $model = new Userview();
         if(isset($_POST['Userview'])) {

@@ -1,6 +1,6 @@
  /* reset.css */
 html {margin:0;padding:0;border:0;}
-body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {display:block;}
 body {line-height:1.5;background:white;}
 table {border-collapse:separate;border-spacing:0;}
@@ -76,8 +76,11 @@ table.detail-view tr.odd {background: #f0f0f0 !important;}
 .dash1 .col1 ul > li:nth-child(2):before{background: #69D7C6;}
 .dash1 .col1 ul > li:nth-child(3):before{background: #7E4D76;}
 .dash1 .col1 ul li span{ display: block; font-size: 24px; text-align: right; color: #AFAB98;}
+
 .dash1 .col2{width: 60%; float: right;}
-.dash1 .col2 canvas{max-height: 500px;}
+
+
+.col2 canvas{max-height: 500px;}
 
 .dash2 .round-sheme{float: left; width: 400px; background: #f0f0f0; margin-right: 20px; padding: 20px; height: 460px; position: relative;}
 .dash2 .round-sheme h4{font-size: 24px; margin: -7px 0 0 0; padding: 0}
@@ -166,3 +169,46 @@ input[type="submit"]:hover{background: #FD625E !important; color: white !importa
 }
 
 .extend:hover{background: #FD625E; color: white;}
+
+.main-graphic .indicator{border-width: 1px; border-style: solid;  margin-bottom: 15px; text-align: center; padding: 7px; cursor: pointer; font-weight: 300}
+.main-graphic .indicator:hover{}
+.main-graphic{width: 100%}
+.center-graphic{width: 80%; float: left;}
+.center-graphic canvas{max-height: 500px;}
+
+.data-type{width: 10%; float: left; padding-right: 15px;box-sizing: border-box;}
+.data-type .indicator{color:#FD625E; border-color: #FD625E }
+.data-type .indicator:nth-child(3n){color:#69D7C6; border-color: #69D7C6 }
+.data-type .indicator:nth-child(4n){color:#7E4D76; border-color: #7E4D76 }
+
+.data-type .indicator:hover{background-color: #FD625E;color: white }
+.data-type .indicator:nth-child(3n):hover{background-color: #69D7C6;color: white }
+.data-type .indicator:nth-child(4n):hover{background-color: #7E4D76;color: white }
+
+.data-type .indicator.active{background-color: #FD625E;color: white }
+.data-type .indicator.active:nth-child(3n){background-color: #69D7C6;color: white }
+.data-type .indicator.active:nth-child(4n){background-color: #7E4D76;color: white }
+
+.platform-type{width: 10%; float: left;padding-left: 15px; box-sizing: border-box;}
+.platform-type .indicator{color:#FD625E; border-color: #FD625E }
+.platform-type .indicator:nth-child(2n){color:#69D7C6; border-color: #69D7C6 }
+.platform-type .indicator:nth-child(3n){color:#7E4D76; border-color: #7E4D76 }
+
+.platform-type .indicator:hover{background-color: #FD625E;color: white }
+.platform-type .indicator:nth-child(2n):hover{background-color: #69D7C6;color: white }
+.platform-type .indicator:nth-child(3n):hover{background-color: #7E4D76;color: white }
+
+.platform-type .indicator.active{background-color: #FD625E;color: white }
+.platform-type .indicator.active:nth-child(2n){background-color: #69D7C6;color: white }
+.platform-type .indicator.active:nth-child(3n){background-color: #7E4D76;color: white }
+
+.date-type{float: none; width: 100%; clear: both; text-align: center; }
+
+
+.date-type .indicator{display: inline-block; padding: 7px 15px; color: #AFAB98; border-color: #AFAB98 }
+
+.date-type .indicator:hover{color: white; background-color: #AFAB98 }
+.date-type .indicator.active{color: white; background-color: #AFAB98 }
+.extend-data{ margin-top: 30px;}
+.extend-data table{width: 100%;}
+.extend-data table th{border-bottom: 1px solid #ccc; font-weight: 100}
